@@ -2,6 +2,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import gsap from 'gsap';
 
+// Initialize AOS (Animate On Scroll)
 AOS.init({
   duration: 1200,
   once: true,
