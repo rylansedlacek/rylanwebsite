@@ -8,6 +8,7 @@ https://rylansed.org
 <h2>Features:</h2>
 
 - Click on buttons to explore!
+- Uses Node JS framework
 
 ---------------------------------------------------------------
 <h2>Version 1.0 Summer 2024</h2>
