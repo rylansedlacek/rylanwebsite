@@ -12,5 +12,9 @@
     "aos": "^3.0.0",
     "gsap": "^3.12.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "description": "<h1><u>Rylan Portfolio Website:</u></h1> https://rylansed.org <h2>About:</h2>",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
