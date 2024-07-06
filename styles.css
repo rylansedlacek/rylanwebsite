@@ -162,6 +162,26 @@ body {
     margin: 0;
   }
 
+  .more-posts {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .more-posts-button {
+    display: inline-block;
+    background-color: #3389c2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .more-posts-button:hover {
+    background-color: #063387;
+  }
   
   
   
