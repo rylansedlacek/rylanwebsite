@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secret snake</title>
+    <link rel="stylesheet" href="snake.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAvKr0vTjyP1C-WYj5ux5ZZWyLg0klNbcs",
+            authDomain: "snake-leader.firebaseapp.com",
+            projectId: "snake-leader",
+            storageBucket: "snake-leader.appspot.com",
+            messagingSenderId: "981120173467",
+            appId: "1:981120173467:web:44660354fa78cc88df4d3e"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="snake.js"></script>
+    <style>
+        .arrow-pad {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .arrow-pad-row {
+            display: flex;
+        }
+        .arrow-btn {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+               background-color: red;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        <span class="S"> SSSS       </span> <span class="N">NN   NN  </span> <span class="A"> AAAAA   </span> <span class="K">  KK   KK   </span> <span class="E">EEEEEE</span><br>
+        <span class="S">SS          </span> <span class="N">NNN  NN  </span> <span class="A">AA    AA  </span> <span class="K"> KK  KK    </span> <span class="E">EE    </span><br>
+        <span class="S">SS          </span> <span class="N">NN N NN  </span> <span class="A">AA    AA  </span> <span class="K"> KK KK     </span> <span class="E">EE    </span><br>
+        <span class="S"> SSSS       </span> <span class="N">NN  NNN  </span> <span class="A">AAAAAAAA  </span> <span class="K"> KKK      </span> <span class="E"> EEEEE </span><br>
+        <span class="S">     SS     </span> <span class="N">NN   NN  </span> <span class="A">AA     AA  </span> <span class="K">KK KK     </span> <span class="E">EE    </span><br>
+        <span class="S">     SS     </span> <span class="N">NN   NN  </span> <span class="A">AA     AA  </span> <span class="K">KK  KK    </span> <span class="E">EE    </span><br>
+        <span class="S"> SSSS       </span> <span class="N">NN   NN  </span> <span class="A">AA     AA  </span> <span class="K">KK   KK   </span> <span class="E">EEEEEE</span><br>
+    </pre>
+    
+    <canvas width="500" height="500" id="game-canvas"></canvas>
+
+    <div class="bottom-container">
+        <button id="restart-button">restart</button>
+        <div>
+            <h2><u>Leaderboard</u></h2>
+            <ul id="leaderboard"></ul>
+        </div>
+
+        <a href="https://rylansed.org/">rylansed.org</a>
+    </div>
+
+    <div id="arrow-pad" class="arrow-pad" style="display: none;">
+        <div class="arrow-pad-row">
+            <div class="arrow-btn" id="up-btn">↑</div>
+        </div>
+        <div class="arrow-pad-row">
+            <div class="arrow-btn" id="left-btn">←</div>
+            <div class="arrow-btn" id="down-btn">↓</div>
+            <div class="arrow-btn" id="right-btn">→</div>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>
