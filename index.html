@@ -1,74 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rylan Sedlacek</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="public/images/rylan.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Rylan Sedlacek</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="public/images/jaguar.png">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Rylan Sedlacek</h1>
-      <p>Welcome to my website!</p>
-      <a href="#about" class="cta-button">See More</a>
-    </div>
+
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- socials -->
-  <section class="social-media">
-    <h2>Social Profiles</h2>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/rylan-sedlacek-b7a311236/" target="_blank" aria-label="LinkedIn">
-        <img src="public/images/linked3.png" alt="LinkedIn">
-      </a>
-      <a href="https://github.com/rylansedlacek" target="_blank" aria-label="GitHub">
-        <img src="public/images/github.webp" alt="GitHub">
-      </a>
-      <a href="https://leetcode.com/u/rylansedlacek/" target="_blank" aria-label="LeetCode">
-        <img src="public/images/leet.png" alt="LeetCode">
-      </a>
-    </div>
-  </section>
+  <main>
+    <section class="intro">
+      <img src="public/images/me2.png" alt="Rylan Sedlacek" class="profile-img" />
+      <h1>Rylan Sedlacek</h1>
+      <p>Computer Science Student at the University of Mary Washington</p>
+    </section>
 
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>I am a second year computer science student at the University of Mary Washington in Fredericksburg VA. I began coding in High School and have loved doing so ever since. To see my projects, refer to my GitHub profile. Also check out my blog!</p>
-  </section>
+    <section class="about">
+      <h2>About:</h2>
+        <p> I am a third-year computer science student at the University of Mary
+          Washington (UMW) in Fredericksburg, Virginia. During my time at UMW I 
+         have worked on lots of exciting projects and have created great memories
+         along the way. 
+         </p>
+    </section>
 
-  <!-- blog -->
-  <section class="blog" id="blog">
-    <h2>Blog</h2>
-    <div class="blog-posts">
-      <article class="blog-post">
-        <h3>Grocery Store Application</h3>
-        <p>Using my skills from CPSC 240 (Object Oriented Analysis and Design) 
-          I created a console based Grocery Store using Java. The project uses file Hydration
-        to read in Stores and their items. To find out how this works click read more! </p>
-        <a href="grocery.html" class="read-more">Read More</a>
-      </article>
-      <article class="blog-post">
-        <h3>Place-Holder</h3>
-        <p>Place-HolderPlace-HolderPlace-HolderPlace-HolderPlace-Holder</p>
-        <a href="#" class="read-more">Read More</a>
-      </article>
+      <section class="social-media">
+      <h2>Connect:</h2>
+      <ul class="social-icons">
+        <li><a href="https://www.linkedin.com/in/rylan-sedlacek-b7a311236/" target="_blank">
+           <img src="public/images/linked3.png" alt="LinkedIn"></a></li>
 
-    </div>
-  </section>
+        <li><a href="https://github.com/rylansedlacek" target="_blank">
+          <img src="public/images/github.webp" alt="GitHub"></a></li>
 
-  <div class="more-posts">
-    <a href="blog.html" class="more-posts-button">More Posts</a>
-  </div>
+        <li><a href="https://leetcode.com/u/rylansedlacek/" target="_blank">
+          <img src="public/images/leet.png" alt="LeetCode"></a></li>
 
-  <div class="game-button">
-    <a href="games.html">games</a>
-  </div>
+      </ul>
+    </section>
+  </main>
 
-  <footer class="footer">
-    <p>&copy; 2024 Rylan Sedlacek. All rights reserved.</p>
+  <footer>
+    <p>&copy; 2025 Rylan Sedlacek. All rights reserved.</p>
   </footer>
-
-  <script src="main.js" type="module"></script>
+  <script src="src/main.js" defer></script>
 </body>
 </html>
