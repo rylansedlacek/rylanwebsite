@@ -171,3 +171,14 @@ footer {
 .project-link:hover {
   text-decoration: underline;
 }
+
+/* do both */
+.banner {
+  width: 100%;
+  color: black;          
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
