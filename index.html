@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home - Rylan Sedlacek</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" type="image/png" href="public/images/jaguar.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
-  <div class="banner">
-    do both
-  </div>
+<body>
 
   <header>
     <nav>
@@ -27,42 +26,63 @@
     <section class="intro">
       <img src="public/images/me2.png" alt="Rylan Sedlacek" class="profile-img" />
       <h1>Rylan Sedlacek</h1>
-      <p>Computer Science Student at the University of Mary Washington</p>
     </section>
 
     <section class="about">
       <h2>About:</h2>
-        <p> I am a third-year computer science student at the University of Mary
-          Washington (UMW) in Fredericksburg, Virginia. During my time at UMW I 
-         have worked on lots of exciting projects, which are listed above.
-         </p>
-         <br>
-         <p>Besides academics, I have many great friends at UMW who, thankfully, prevent 
-          me from studying constantly. I’m also a member of UMW’s track team, a team I enjoy 
-          practicing and competing with. Get dirty, Go Wash.
-          </p>
-          
+      <p> I am a third-year computer science student at the University of Mary
+        Washington (UMW) in Fredericksburg, Virginia. During my time at UMW I
+        have worked on lots of exciting projects, which are accessible above.
+      </p>
+      <br/>
+      <p>
+        My recent work focuses on <strong>BLVDIFF</strong>, a Rust-based command-line tool designed to 
+        enhance Python debugging for blind and low-vision (BLV) developers. It integrates an LLM for trace 
+        back explanations and differential tools. Aiming to address common debugging pain points for BLV users. 
+      </p>
     </section>
 
-      <section class="social-media">
+     <h2>Favorites:</h2>
+    <section class="projects">
+      <div class="project-grid">
+        <div class="project-card">
+          <h3><u>BLVDIFF</u></h3>
+          <p>A Rust-based CLI tool that enhances Python debugging for blind and low-vision developers using
+            differential tools. Features flags like <code>--explain</code> and <code>--diff</code> for context-aware
+            debugging.</p>
+          <a href="https://github.com/rylansedlacek/blvflag" class="project-link">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h3><u>sedgrad</u></h3>
+          <p>An educational deep learning framework written in Python. Includes a custom autograd engine, simple neural
+            components, and tools for visualizing computation graphs — all aimed at exploring modern ML frameworks.
+          </p>
+          <a href="https://github.com/rylansedlacek/sedgrad" class="project-link">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-media">
       <h2>Connect:</h2>
       <ul class="social-icons">
         <li><a href="https://www.linkedin.com/in/rylan-sedlacek-b7a311236/" target="_blank">
-           <img src="public/images/linked3.png" alt="LinkedIn"></a></li>
+            <img src="public/images/linked3.png" alt="LinkedIn"></a></li>
 
         <li><a href="https://github.com/rylansedlacek" target="_blank">
-          <img src="public/images/github.webp" alt="GitHub"></a></li>
+            <img src="public/images/github.webp" alt="GitHub"></a></li>
 
         <li><a href="https://leetcode.com/u/rylansedlacek/" target="_blank">
-          <img src="public/images/leet.png" alt="LeetCode"></a></li>
+            <img src="public/images/leet.png" alt="LeetCode"></a></li>
 
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Rylan Sedlacek. All rights reserved.</p>
+    <p>&copy; 2025 Rylan Sedlacek.</p>
   </footer>
   <script src="src/main.js" defer></script>
 </body>
+
 </html>
